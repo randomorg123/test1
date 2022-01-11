@@ -1,0 +1,9 @@
+name: blank
+on:
+  push:
+jobs:
+  blank:
+    runs-on: ubuntu-latest
+    steps:
+      - name: MyCommands
+        uses: randomorg123/test2@main
