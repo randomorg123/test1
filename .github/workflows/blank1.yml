@@ -24,6 +24,6 @@ jobs:
         run: |
           ls -l
       - name: Run my action
-        uses: test2/my-action@main
+        uses: randomorg123/test2@main
    
 
