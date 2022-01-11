@@ -10,13 +10,20 @@ jobs:
   my_first_job:
     runs-on: ubuntu-latest
     steps:
+      - name: MyCommands
+        run: |
+          mkdir test2 && cd test2
       - name: Check out repository
         uses: actions/checkout@v2
         with:
           repository: randomorg123/test2
           ref: main
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          path: ./.github/actions/my-private-repo
+          path: test2
+      - name: MyCommands
+        run: |
+          ls -l
       - name: Run my action
-        uses: ./.github/actions/my-private-repo/my-action
+        uses: test2/my-action
    
+
