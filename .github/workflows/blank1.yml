@@ -1,12 +1,10 @@
-name: blank
-on:
-  push:
-jobs:
-  blank:
-    uses: randomorg123/test2/.github/workflows/blank.yml@main
-  blank2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: MyCommands
-        uses: randomorg123/test2@main
+name: Call a reusable workflow
 
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-workflow:
+    uses: randomorg123/test2/.github/workflows/blank.yml@main
