@@ -18,7 +18,7 @@ jobs:
         with:
           repository: randomorg123/test2
           ref: main
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: test2
       - name: MyCommands
         run: |
