@@ -23,7 +23,7 @@ jobs:
       - name: MyCommands
         run: |
           ls -l
-      - name: Run my action
-        uses: randomorg123/test2@main
+      #- name: Run my action
+      #  uses: randomorg123/test2@main
    
 
