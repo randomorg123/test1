@@ -4,8 +4,8 @@ on:
   push
 
 jobs:
-  call_a_workflow_file_from_secondary_repo:
-    uses: randomorg123/test2/.github/workflows/blank.yml@main
+#  call_a_workflow_file_from_secondary_repo:
+#    uses: randomorg123/test2/.github/workflows/blank.yml@main
     
   call_an_action_from_secondary_repo:
     runs-on: ubuntu-latest
