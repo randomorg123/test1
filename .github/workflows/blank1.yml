@@ -1,29 +1,11 @@
-name: Call a reusable workflow
-
+name: blank
 on:
-  push
-
+  push:
 jobs:
-#  call_a_workflow_file_from_secondary_repo:
-#    uses: randomorg123/test2/.github/workflows/blank.yml@main
-    
-  call_an_action_from_secondary_repo:
+  blank:
     runs-on: ubuntu-latest
     steps:
       - name: MyCommands
         run: |
-          mkdir test2 && cd test2
-      - name: Check out repository
-        uses: actions/checkout@v2
-        with:
-          repository: randomorg123/test2
-          ref: main
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: test2
-      - name: MyCommands
-        run: |
-          ls -l
-      #- name: Run my action
-      #  uses: randomorg123/test2@main
-   
-
+          echo Hello
+          echo World
